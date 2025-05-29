@@ -1,0 +1,179 @@
+doctype html
+html(lang="pl")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Regulamin - mOpolskie
+    link(rel="stylesheet", href="/css/terms-styles.css")
+    link(rel="icon", type="image/jpg", href="/img/mOpolskie.jpg", sizes="196x196")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css")
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap", rel="stylesheet")
+
+    meta(property="og:title", content="Aplikacja mobilna mOpolskie")
+    meta(property="og:description", content="Twoje inteligentne centrum regionu!")
+    meta(property="og:url", content="https://mopolskie.goflux.pl/")
+    meta(property="og:type", content="website")
+  
+  body
+    header.header
+      .container
+        .logo
+          i.fas.fa-mobile-alt
+          h1 mOpolskie
+          span.tagline Inteligentne centrum regionu
+        
+        .menu-toggle
+          i.fas.fa-bars
+        
+        nav.nav
+          ul.nav-list
+            li.nav-item: a.nav-link(href="https://mopolskie.goflux.pl") Strona główna
+            li.nav-item: a.nav-link(href="https://mopolskie.goflux.pl#funkcje") Funkcje
+            li.nav-item: a.nav-link(href="https://mopolskie.goflux.pl#dla-kogo") Dla kogo
+            li.nav-item: a.nav-link.cta-button(href="#") Pobierz aplikację
+    
+    main.terms-content
+      .container
+        .terms-header
+          h1 Regulamin aplikacji mOpolskie
+          .terms-badge
+            i.fas.fa-gavel
+            span Ostatnia aktualizacja: Maj 2025
+        
+        .terms-intro
+          p Niniejszy regulamin określa zasady korzystania z aplikacji mobilnej mOpolskie udostępnianej przez goFlux.pl. Korzystając z aplikacji, akceptujesz poniższe warunki.
+        
+        .terms-sections
+          section.terms-section
+            .section-icon
+              i.fas.fa-info-circle
+            h2 § 1. Postanowienia ogólne
+            .section-content
+              ol.terms-list
+                li Aplikacja mOpolskie (zwana dalej "Aplikacją") jest bezpłatną usługą informacyjną udostępnianą przez goFlux.pl.
+                li Aplikacja służy do prezentacji informacji o instytucjach, usługach i atrakcjach w województwie opolskim.
+                li Korzystanie z Aplikacji jest dobrowolne i bezpłatne.
+                li Użytkownik zobowiązuje się do korzystania z Aplikacji zgodnie z jej przeznaczeniem i obowiązującym prawem.
+          
+          section.terms-section
+            .section-icon
+              i.fas.fa-mobile-alt
+            h2 § 2. Wymagania techniczne
+            .section-content
+              ol.terms-list
+                li Aplikacja wymaga urządzenia z systemem Android w wersji 5.0 lub nowszej.
+                li Do prawidłowego działania Aplikacji wymagane jest połączenie z internetem (Wi-Fi lub dane mobilne).
+                li Aplikacja nie działa w trybie offline.
+                li Użytkownik ponosi koszty transmisji danych zgodnie z taryfą swojego operatora.
+          
+          section.terms-section
+            .section-icon
+              i.fas.fa-shield-alt
+            h2 § 3. Zakres odpowiedzialności
+            .section-content
+              ol.terms-list
+                li goFlux.pl dokłada wszelkich starań, aby informacje w Aplikacji były aktualne i prawdziwe.
+                li Nie ponosimy odpowiedzialności za ewentualne szkody wynikające z korzystania z Aplikacji.
+                li Informacje w Aplikacji mają charakter informacyjny i nie stanowią oficjalnych dokumentów.
+                li W sprawach urzędowych należy kontaktować się bezpośrednio z odpowiednimi instytucjami.
+          
+          section.terms-section
+            .section-icon
+              i.fas.fa-ban
+            h2 § 4. Zakazy
+            .section-content
+              p Użytkownikowi zabrania się:
+              ul.terms-list.prohibited
+                li
+                  i.fas.fa-times-circle
+                  span Używania Aplikacji w sposób niezgodny z prawem lub niniejszym regulaminem
+                li
+                  i.fas.fa-times-circle
+                  span Podejmowania prób naruszenia bezpieczeństwa Aplikacji
+                li
+                  i.fas.fa-times-circle
+                  span Kopiowania, modyfikowania lub rozpowszechniania treści Aplikacji bez zgody
+                li
+                  i.fas.fa-times-circle
+                  span Używania Aplikacji w sposób mogący zakłócić jej działanie
+          
+          section.terms-section
+            .section-icon
+              i.fas.fa-copyright
+            h2 § 5. Prawa autorskie
+            .section-content
+              ol.terms-list
+                li Wszystkie treści w Aplikacji są chronione prawem autorskim.
+                li Użytkownik może korzystać z informacji wyłącznie do celów osobistych.
+                li Zabronione jest komercyjne wykorzystanie treści bez pisemnej zgody.
+                li Logo i nazwa "mOpolskie" są znakami towarowymi goFlux.pl.
+          
+          section.terms-section
+            .section-icon
+              i.fas.fa-sync-alt
+            h2 § 6. Aktualizacje i zmiany
+            .section-content
+              ol.terms-list
+                li goFlux.pl zastrzega sobie prawo do wprowadzania zmian w Aplikacji.
+                li Aktualizacje mogą być instalowane automatycznie.
+                li Zmiany w regulaminie będą publikowane w Aplikacji i na stronie internetowej.
+                li Dalsze korzystanie z Aplikacji po wprowadzeniu zmian oznacza ich akceptację.
+          
+          section.terms-section
+            .section-icon
+              i.fas.fa-phone
+            h2 § 7. Kontakt i wsparcie
+            .section-content
+              p W przypadku problemów technicznych lub pytań dotyczących Aplikacji, prosimy o kontakt:
+              .contact-info
+                .contact-item
+                  i.fas.fa-envelope
+                  span bok@goFlux.pl
+          
+          section.terms-section
+            .section-icon
+              i.fas.fa-calendar-alt
+            h2 § 8. Postanowienia końcowe
+            .section-content
+              ol.terms-list
+                li Niniejszy regulamin wchodzi w życie z dniem publikacji.
+                li W sprawach nieuregulowanych niniejszym regulaminem zastosowanie mają przepisy prawa polskiego.
+                li Ewentualne spory będą rozstrzygane przez sądy właściwe dla siedziby Województwa Opolskiego.
+                li Jeśli którekolwiek z postanowień regulaminu okaże się nieważne, pozostałe postanowienia zachowują moc.
+        
+        .terms-summary
+          .summary-box
+            h3 Akceptacja regulaminu
+            p Pobierając i korzystając z aplikacji mOpolskie, oświadczasz, że zapoznałeś się z niniejszym regulaminem i zobowiązujesz się do jego przestrzegania.
+        
+        .terms-actions
+          a.button.primary(href="https://mopolskie.goflux.pl") Powrót do strony głównej
+          a.button.secondary(href="https://mopolskie.goflux.pl/privacy-policy") Polityka prywatności
+
+    footer.footer
+      .container
+        .footer-grid
+          .footer-column
+            .footer-logo
+              i.fas.fa-mobile-alt
+              span mOpolskie
+            p Inteligentne centrum regionu opolskiego w Twojej kieszeni.
+          
+          .footer-column
+            h3 Kontakt
+            ul.footer-links
+              li: a(href="mailto:bok@goflux.pl") bok@goflux.pl
+          
+          .footer-column
+            h3 Dokumenty prawne
+            ul.footer-links
+              li: a(href="https://mopolskie.goflux.pl/privacy-policy") Polityka prywatności
+              li: a(href="https://mopolskie.goflux.pl/terms-of-service" class="active") Regulamin
+              li: a(href="https://mopolskie.goflux.pl/support") Wsparcie
+        
+        .footer-bottom
+          p &copy; 2025 mOpolskie. Wszystkie prawa zastrzeżone.
+    
+    script(src="/js/terms-script.js")

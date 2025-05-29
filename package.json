@@ -1,0 +1,30 @@
+{
+  "name": "flux-website",
+  "version": "1.0.0",
+  "description": "Official goflux website with guide, docs written in express and pug.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write ."
+  },
+  "author": "IJakePL",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "body-parser": "^1.20.3",
+    "cheerio": "^1.0.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.7",
+    "cookies": "^0.9.1",
+    "cors": "^2.8.5",
+    "dns": "^0.2.2",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "method-override": "^3.0.0",
+    "path": "^0.12.7",
+    "ping": "^0.4.4",
+    "prettier": "^3.5.3",
+    "pug": "^3.0.3",
+    "puppeteer": "^24.9.0"
+  }
+}

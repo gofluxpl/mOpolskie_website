@@ -1,0 +1,200 @@
+doctype html
+html(lang="pl")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Wsparcie - mOpolskie
+    link(rel="stylesheet", href="/css/support-styles.css")
+    link(rel="icon", type="image/jpg", href="/img/mOpolskie.jpg", sizes="196x196")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css")
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap", rel="stylesheet")
+
+    meta(property="og:title", content="Aplikacja mobilna mOpolskie")
+    meta(property="og:description", content="Twoje inteligentne centrum regionu!")
+    meta(property="og:url", content="https://mopolskie.goflux.pl/")
+    meta(property="og:type", content="website")
+  
+  body
+    header.header
+      .container
+        .logo
+          i.fas.fa-mobile-alt
+          h1 mOpolskie
+          span.tagline Inteligentne centrum regionu
+        
+        .menu-toggle
+          i.fas.fa-bars
+        
+        nav.nav
+          ul.nav-list
+            li.nav-item: a.nav-link(href="https://mopolskie.goflux.pl") Strona główna
+            li.nav-item: a.nav-link(href="https://mopolskie.goflux.pl#funkcje") Funkcje
+            li.nav-item: a.nav-link(href="https://mopolskie.goflux.pl#dla-kogo") Dla kogo
+            li.nav-item: a.nav-link.cta-button(href="#") Pobierz aplikację
+
+    main.support-content
+      .container
+        .support-header
+          h1 Centrum wsparcia
+          .support-badge
+            i.fas.fa-headset
+            span Jesteśmy tutaj, aby pomóc
+        
+        .support-intro
+          p Masz problem z aplikacją mOpolskie? Znajdź odpowiedzi na najczęściej zadawane pytania lub skontaktuj się z naszym zespołem wsparcia.
+
+        .quick-help
+          h2 Szybka pomoc
+          .help-cards
+            .help-card
+              .help-icon
+                i.fas.fa-download
+              h3 Jak pobrać aplikację?
+              p Aplikacja jest dostępna w Google Play Store. Wyszukaj "mOpolskie" i pobierz bezpłatnie.
+            
+            .help-card
+              .help-icon
+                i.fas.fa-wifi
+              h3 Problemy z połączeniem?
+              p Sprawdź połączenie internetowe. Aplikacja wymaga Wi-Fi lub danych mobilnych.
+            
+            .help-card
+              .help-icon
+                i.fas.fa-sync-alt
+              h3 Aplikacja się zawiesza?
+              p Spróbuj zamknąć i ponownie uruchomić aplikację lub zrestartować urządzenie.
+
+        .faq-section
+          h2 Najczęściej zadawane pytania
+          .faq-container
+            .faq-item
+              .faq-question(data-faq="download")
+                h3#faq-download Jak pobrać i zainstalować aplikację?
+                i.fas.fa-chevron-down
+              .faq-answer
+                ol
+                  li Otwórz Google Play Store na swoim urządzeniu Android
+                  li Wyszukaj "mOpolskie" w sklepie
+                  li Kliknij "Zainstaluj" - aplikacja jest bezpłatna
+                  li Po instalacji uruchom aplikację i ciesz się funkcjami
+                p.note Uwaga: Aplikacja wymaga systemu Android 5.0 lub nowszego.
+            
+            .faq-item
+              .faq-question(data-faq="connection")
+                h3#faq-connection Dlaczego aplikacja wymaga połączenia z internetem?
+                i.fas.fa-chevron-down
+              .faq-answer
+                p Aplikacja pobiera aktualne informacje o:
+                ul
+                  li Godzinach otwarcia instytucji
+                  li Aktualnych wydarzeniach kulturalnych
+                  li Dostępności usług
+                  li Lokalizacjach na mapie
+                p Dzięki temu masz zawsze najświeższe dane.
+            
+            .faq-item
+              .faq-question(data-faq="crashes")
+                h3#faq-crashes Co robić, gdy aplikacja się zawiesza?
+                i.fas.fa-chevron-down
+              .faq-answer
+                p Spróbuj następujących rozwiązań:
+                ol
+                  li Zamknij aplikację i uruchom ponownie
+                  li Zrestartuj urządzenie
+                  li Sprawdź, czy masz najnowszą wersję aplikacji
+                  li Upewnij się, że masz stabilne połączenie internetowe
+                  li Zwolnij miejsce w pamięci urządzenia
+            
+            .faq-item
+              .faq-question(data-faq="data")
+                h3 Czy aplikacja zbiera moje dane osobowe?
+                i.fas.fa-chevron-down
+              .faq-answer
+                p Nie! Aplikacja mOpolskie:
+                ul
+                  li Nie zbiera żadnych danych osobowych
+                  li Nie śledzi Twojej lokalizacji
+                  li Nie wymaga rejestracji
+                  li Nie przechowuje historii przeglądania
+                p Więcej informacji znajdziesz w naszej 
+                  a(href="https://mopolskie.goflux.pl/privacy-policy") polityce prywatności.
+            
+            .faq-item
+              .faq-question(data-faq="offline")
+                h3 Czy mogę korzystać z aplikacji offline?
+                i.fas.fa-chevron-down
+              .faq-answer
+                p Niestety, aplikacja nie działa w trybie offline. Wymaga połączenia z internetem, aby:
+                ul
+                  li Pobierać aktualne informacje
+                  li Wyświetlać mapy i lokalizacje
+                  li Pokazywać godziny otwarcia
+                  li Prezentować wydarzenia
+            
+            .faq-item
+              .faq-question(data-faq="update")
+                h3 Jak zaktualizować aplikację?
+                i.fas.fa-chevron-down
+              .faq-answer
+                ol
+                  li Otwórz Google Play Store
+                  li Przejdź do sekcji "Moje aplikacje i gry"
+                  li Znajdź mOpolskie na liście
+                  li Kliknij "Aktualizuj" jeśli dostępna jest nowa wersja
+                p Możesz też włączyć automatyczne aktualizacje w ustawieniach sklepu.
+
+        .contact-section
+          h2 Skontaktuj się z nami
+          .contact-methods
+            .contact-method
+              .contact-icon
+                i.fas.fa-envelope
+              h3 Email
+              p bok@goflux.pl
+              a.contact-button(href="mailto:bok@goflux.pl") Wyślij email
+            
+            .contact-method
+              .contact-icon
+                i.fab.fa-github
+              h3 Github
+              p Zgłoś błędy i sugestie na naszym repozytorium.
+              a.contact-button(href="https://github.com/gofluxpl/mOpolskie/issues") Zgłoś problem
+            
+            .contact-method
+              .contact-icon
+                i.fab.fa-discord
+              h3 Discord
+              p Dołącz na nasz serwer wsparcia.
+              a.contact-button(href="https://discord.gg/9DqvVuhG2v") Dołącz do nas
+        
+        .support-actions
+          a.button.primary(href="https://mopolskie.goflux.pl") Powrót do strony głównej
+          a.button.secondary(href="https://mopolskie.goflux.pl/terms-of-service") Regulamin
+
+    footer.footer
+      .container
+        .footer-grid
+          .footer-column
+            .footer-logo
+              i.fas.fa-mobile-alt
+              span mOpolskie
+            p Inteligentne centrum regionu opolskiego w Twojej kieszeni.
+          
+          .footer-column
+            h3 Kontakt
+            ul.footer-links
+              li: a(href="mailto:bok@goflux.pl") bok@goflux.pl
+          
+          .footer-column
+            h3 Dokumenty prawne
+            ul.footer-links
+              li: a(href="https://mopolskie.goflux.pl/privacy-policy") Polityka prywatności
+              li: a(href="https://mopolskie.goflux.pl/terms-of-service") Regulamin
+              li: a(href="https://mopolskie.goflux.pl/support" class="active") Wsparcie
+        
+        .footer-bottom
+          p &copy; 2025 mOpolskie. Wszystkie prawa zastrzeżone.
+    
+    script(src="/js/support-script.js")

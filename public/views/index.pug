@@ -1,0 +1,223 @@
+doctype html
+html(lang="pl")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title mOpolskie - Twoje inteligentne centrum regionu
+    link(rel="icon", type="image/jpg", href="/img/mOpolskie.jpg", sizes="196x196")
+    link(rel="stylesheet", href="/css/styles.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css")
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap", rel="stylesheet")
+
+    meta(property="og:title", content="Aplikacja mobilna mOpolskie")
+    meta(property="og:description", content="Twoje inteligentne centrum regionu!")
+    meta(property="og:url", content="https://mopolskie.goflux.pl/")
+    meta(property="og:type", content="website")
+  
+  body
+    header.header
+      .container
+        .logo
+          i.fas.fa-mobile-alt
+          h1 mOpolskie
+          span.tagline Inteligentne centrum regionu
+        
+        .menu-toggle
+          i.fas.fa-bars
+        
+        nav.nav
+          ul.nav-list
+            li.nav-item: a.nav-link(href="#funkcje") Funkcje
+            li.nav-item: a.nav-link(href="#dla-kogo") Dla kogo
+            li.nav-item: a.nav-link(href="#technologie") Technologie
+            li.nav-item: a.nav-link.cta-button(href="#") Pobierz aplikację
+
+    section.hero
+      .container
+        .hero-content
+          span.badge Nowoczesna aplikacja mobilna
+          h1.hero-title mOpolskie
+          p.hero-description
+            | Twoje inteligentne centrum regionu! Nowoczesna aplikacja mobilna, 
+            | która przenosi usługi publiczne i informacje regionalne województwa 
+            | opolskiego wprost na ekran Twojego smartfona.
+          
+          .hero-buttons
+            a.button.primary(href="#")
+              i.fas.fa-download
+              | Pobierz na Android
+            a.button.secondary(href="https://github.com/gofluxpl/mOpolskie/tree/master")
+              i.fas.fa-star
+              | Zobacz kod
+
+    section#funkcje.features
+      .container
+        .section-header
+          h2 Główne funkcje aplikacji
+          p Zintegrowaliśmy najważniejsze punkty i instytucje regionu, abyś miał do nich dostęp zawsze i wszędzie.
+        
+        .features-grid
+          .feature-card
+            .feature-icon
+              i.fas.fa-map-marker-alt
+            h3 Atrakcje turystyczne
+            p Odkryj zabytki, szlaki, muzea i perełki regionu Opolszczyzny.
+          
+          .feature-card
+            .feature-icon
+              i.fas.fa-pills
+            h3 Apteki
+            p Znajdź najbliższą aptekę – z godzinami otwarcia i lokalizacją.
+          
+          .feature-card
+            .feature-icon
+              i.fas.fa-building
+            h3 Starostwa i urzędy
+            p Bez stresu – kontakt, adresy i godziny urzędów publicznych w jednym miejscu.
+          
+          .feature-card
+            .feature-icon
+              i.fas.fa-trash
+            h3 Wywóz śmieci i sortowanie
+            p Zaplanuj wywóz i naucz się sortować śmieci zgodnie z lokalnymi zasadami
+          
+          .feature-card
+            .feature-icon
+              i.fas.fa-gavel
+            h3 Sądy, WORD, szpitale
+            p Bezpiecznie i świadomie – szybki dostęp do ważnych instytucji zdrowotnych i prawnych.
+          
+          .feature-card
+            .feature-icon
+              i.fas.fa-dumbbell
+            h3 Sport i rekreacja
+            p Siłownie, baseny, boiska – aktywny wypoczynek blisko Ciebie.
+          
+          .feature-card
+            .feature-icon
+              i.fas.fa-graduation-cap
+            h3 Szkoły i uczelnie
+            p Znajdź szkołę lub uczelnię wyższą w Twojej okolicy – wraz z kluczowymi informacjami.
+          
+          .feature-card
+            .feature-icon
+              i.fas.fa-heart
+            h3 Pomoc społeczna
+            p Wsparcie dla osób potrzebujących – szybki kontakt z instytucjami pomocy społecznej.
+          
+          .feature-card
+            .feature-icon
+              i.fas.fa-book-open
+            h3 Biblioteki i kultura
+            p Nie przegap wydarzeń kulturalnych, seansów filmowych i nowości w bibliotekach.
+          
+          .feature-card
+            .feature-icon
+              i.fas.fa-hotel
+            h3 Hotele i rozrywka
+            p Gdzie spać, gdzie się bawić – zawsze aktualne propozycje.
+
+    section#dla-kogo.target-groups
+      .container
+        .section-header
+          h2 Dla kogo?
+          p Aplikacja stworzona z myślą o różnych grupach użytkowników
+        
+        .groups-grid
+          .group-card
+            .group-icon
+              i.fas.fa-users
+            h3 Mieszkańcy województwa opolskiego
+            p Codzienne wsparcie w kontakcie z instytucjami regionalnymi
+          
+          .group-card
+            .group-icon
+              i.fas.fa-map-marker-alt
+            h3 Turyści
+            p Szukający informacji lokalnych i atrakcji turystycznych
+          
+          .group-card
+            .group-icon
+              i.fas.fa-user-check
+            h3 Osoby starsze
+            p Potrzebujące prostych narzędzi informacyjnych
+          
+          .group-card
+            .group-icon
+              i.fas.fa-graduation-cap
+            h3 Studenci i uczniowie
+            p Poruszający się po regionie i szukający informacji edukacyjnych
+          
+          .group-card
+            .group-icon
+              i.fas.fa-baby
+            h3 Rodziny z dziećmi
+            p Planujące aktywny weekend i szukające atrakcji rodzinnych
+
+    section#technologie.technologies
+      .container
+        .section-header.light
+          h2 Technologie
+          p Nowoczesny stack technologiczny zapewniający najlepszą wydajność
+        
+        .tech-list
+          .tech-item
+            i.fas.fa-code
+            span Kotlin
+          
+          .tech-item
+            i.fas.fa-server
+            span REST API
+          
+          .tech-item
+            i.fas.fa-globe
+            span Mapy Google
+          
+          .tech-item
+            i.fas.fa-bell
+            span Firebase
+          
+          .tech-item
+            i.fas.fa-code
+            span XML
+
+    section.cta
+      .container
+        h2 Gotowy na inteligentne zarządzanie regionem?
+        p Dołącz do tysięcy użytkowników, którzy już korzystają z mOpolskie i odkryj wszystkie możliwości swojego regionu.
+        
+        .cta-buttons
+          a.button.white(href="#")
+            i.fas.fa-download
+            | Pobierz teraz
+          a.button.outline-white(href="#")
+            i.fas.fa-check-circle
+            | Dowiedz się więcej
+
+    footer.footer
+      .container
+        .footer-grid
+          .footer-column
+            .footer-logo
+              i.fas.fa-mobile-alt
+              span mOpolskie
+            p Inteligentne centrum regionu opolskiego w Twojej kieszeni.
+          
+          .footer-column
+            h3 Kontakt
+            ul.footer-links
+              li: a(href="mailto:bok@goflux.pl") bok@goflux.pl
+          
+          .footer-column
+            h3 Linki
+            ul.footer-links
+              li: a(href="https://mopolskie.goflux.pl/privacy-policy") Polityka prywatności
+              li: a(href="https://mopolskie.goflux.pl/terms-of-service") Regulamin
+              li: a(href="https://mopolskie.goflux.pl/support") Wsparcie
+        
+        .footer-bottom
+          p &copy; 2025 mOpolskie. Wszystkie prawa zastrzeżone.
+    
+    script(src="/js/script.js")
